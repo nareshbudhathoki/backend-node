@@ -7,7 +7,7 @@ const { registeredHomes } = require('./hostRouter');
 const userRouter = express.Router();
 
 userRouter.get("/", (req, res, next)=>{
-  res.render('home', {registeredHomes, pageTitle:"airbnb Home"})
+  res.render('home', {registeredHomes, pageTitle:"airbnb Home", currentPage:"home"});
 });
 
 module.exports = userRouter;
