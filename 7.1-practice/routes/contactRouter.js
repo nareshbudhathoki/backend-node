@@ -13,6 +13,7 @@ contactRouter.get("/contact-us",(req, res, next)=>{
 })
 
 contactRouter.post("/contact-success", (req, res, next)=>{
+  console.log(req.body);
   res.sendFile(path.join(rootDir, "./views/contact-success.html"))
 })
 
