@@ -1,0 +1,109 @@
+<%- include("../partials/head.ejs") %>
+
+<body class="bg-gray-50">
+
+  <%- include("../partials/nav") %>
+
+  <main class="max-w-6xl mx-auto px-4 py-10">
+
+    <h1 class="text-2xl font-semibold mb-8">Your Trips</h1>
+
+    <!-- Booking Card 1 -->
+    <div class="space-y-6">
+
+      <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col md:flex-row">
+
+        <!-- Image -->
+        <div class="md:w-1/3">
+          <img 
+            src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688"
+            alt="Booked Home" 
+            class="w-full h-56 md:h-full object-cover"
+          >
+        </div>
+
+        <!-- Details -->
+        <div class="p-6 flex flex-col justify-between md:w-2/3">
+
+          <div>
+            <h2 class="text-xl font-semibold mb-2">
+              Luxury Beach Villa
+            </h2>
+
+            <p class="text-gray-600 mb-4">
+              Malibu, California
+            </p>
+
+            <div class="text-sm text-gray-500 space-y-1">
+              <p>Check-in: <span class="font-medium text-gray-800">March 12, 2026</span></p>
+              <p>Check-out: <span class="font-medium text-gray-800">March 16, 2026</span></p>
+              <p>Guests: <span class="font-medium text-gray-800">2 Adults</span></p>
+            </div>
+          </div>
+
+          <!-- Price & Status -->
+          <div class="mt-6 flex items-center justify-between">
+            <p class="text-lg font-semibold text-gray-900">
+              $1,250
+              <span class="text-sm text-gray-500 font-normal">total</span>
+            </p>
+
+            <span class="px-3 py-1 text-sm rounded-full bg-green-100 text-green-700 font-medium">
+              Confirmed
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Booking Card 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col md:flex-row">
+
+        <div class="md:w-1/3">
+          <img 
+            src="https://images.unsplash.com/photo-1493809842364-78817add7ffb"
+            alt="Booked Home" 
+            class="w-full h-56 md:h-full object-cover"
+          >
+        </div>
+
+        <div class="p-6 flex flex-col justify-between md:w-2/3">
+
+          <div>
+            <h2 class="text-xl font-semibold mb-2">
+              Mountain Cabin Retreat
+            </h2>
+
+            <p class="text-gray-600 mb-4">
+              Aspen, Colorado
+            </p>
+
+            <div class="text-sm text-gray-500 space-y-1">
+              <p>Check-in: <span class="font-medium text-gray-800">April 5, 2026</span></p>
+              <p>Check-out: <span class="font-medium text-gray-800">April 10, 2026</span></p>
+              <p>Guests: <span class="font-medium text-gray-800">4 Guests</span></p>
+            </div>
+          </div>
+
+          <div class="mt-6 flex items-center justify-between">
+            <p class="text-lg font-semibold text-gray-900">
+              $2,100
+              <span class="text-sm text-gray-500 font-normal">total</span>
+            </p>
+
+            <span class="px-3 py-1 text-sm rounded-full bg-green-100 text-green-700 font-medium">
+              Confirmed
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <%- include("../partials/footer") %>
+
+</body>
+</html>

@@ -1,19 +1,18 @@
 const Home = require("../models/home");
 
-exports.getHome =  (req, res, next)=>{
-  Home.fetchAll((registeredHomes) => {
-    res.render("store/home", {
-      registeredHomes,
-      pageTitle: "airbnb Home",
-      currentPage: "home"
-    });
-  });
-}
-
 exports.getAddHome = (req, res, next)=>{
   res.render( "host/add-home.ejs", {pageTitle:"Register Home", currentPage:"add-home"});
 };
 
+exports.getHostHome =  (req, res, next)=>{
+  Home.fetchAll((registeredHomes) => {
+    res.render("host/host-home-list", {
+      registeredHomes,
+      pageTitle: "Host-Homes List",
+      currentPage: "hosthome"
+    });
+  });
+}
 
 exports.postAddHome =  (req, res, next)=>{
   const {houseName, location, pricePerNight, imageUrl, rating} = req.body;

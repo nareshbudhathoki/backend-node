@@ -1,0 +1,18 @@
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <nav>
+        <a href="/" class="<%= currentPage === 'index' ? 'bg-red-600 text-white px-3 rounded' : 'text-gray-700 hover:text-red-600 px-3' %>">Airbnb</a>
+
+        <a href="/homes" class="<%= currentPage === 'home' ? 'bg-red-600 text-white px-3 rounded' : 'text-gray-700 hover:text-red-600 px-3' %>">Homes-List</a>
+
+        <a href="/host/add-home" class="<%= currentPage === 'add-home' ? 'bg-red-600 text-white px-3 rounded' : 'text-gray-700 hover:text-red-600 px-3' %>">Add Home</a>
+
+        <a href="/host/host-home-list" class="<%= currentPage === 'hosthome' ? 'bg-red-600 text-white px-3 rounded' : 'text-gray-700 hover:text-red-600 px-3' %>">Host Home List</a>
+
+        <a href="/bookings" class="<%= currentPage === 'bookings' ? 'bg-red-600 text-white px-3 rounded' : 'text-gray-700 hover:text-red-600 px-3' %>">Bookings</a>
+
+         <a href="/favourites" class="<%= currentPage === 'favourites' ? 'bg-red-600 text-white px-3 rounded' : 'text-gray-700 hover:text-red-600 px-3' %>">Favourites</a>
+
+      </nav>
+    </div>
+  </header>
