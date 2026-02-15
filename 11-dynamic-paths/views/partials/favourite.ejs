@@ -1,0 +1,13 @@
+<%
+  const resolvedFormClass = typeof formClass === "string" ? formClass : "";
+  const resolvedButtonClass =
+    typeof buttonClass === "string"
+      ? buttonClass
+      : "inline-flex items-center gap-2 rounded-md bg-linear-to-r from-green-400 to-blue-500 px-4 py-2 font-semibold text-white shadow-sm transition hover:from-green-500 hover:to-blue-600";
+%>
+<form action="/favourites" method="POST" class="<%= resolvedFormClass %>">
+  <button type="submit" class="<%= resolvedButtonClass %>">
+    <span>Add to Favourite</span>
+  </button>
+  <input type="hidden" name="id" value="<%= home.id %>">
+</form>

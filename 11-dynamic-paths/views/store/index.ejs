@@ -35,15 +35,17 @@
           </div>
         </div>
 
-        <!-- Book Button -->
-        <div class="mt-4">
-          <a href="/book/<%= home.houseName %>" 
-             class="block w-full text-center bg-blue-600 text-white text-sm font-medium py-2 mb-2 rounded-md hover:bg-blue-700 transition">
-            Book Now
-          </a>
+        <div class="mt-4 space-y-2">
+          <%- include("../partials/favourite.ejs", {
+            home: home,
+            formClass: "w-full",
+            buttonClass: "inline-flex w-full items-center justify-center gap-2 rounded-md bg-linear-to-r from-green-400 to-blue-500 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:from-green-500 hover:to-blue-600"
+          }) %>
 
-          <a href="/homes/<%= home.id %>" 
-             class="block w-full text-center bg-blue-600 text-white text-sm font-medium py-2 rounded-md hover:bg-blue-700 transition">
+          <a
+            href="/homes/<%= home.id %>"
+            class="block w-full rounded-md bg-blue-600 py-2 text-center text-sm font-medium text-white transition hover:bg-blue-700"
+          >
             Get Details
           </a>
         </div>
